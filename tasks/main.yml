@@ -1,4 +1,6 @@
 ---
+# tasks file for ansible-dcos-bootstrap-master
+
 - name: Create /tmp/dcos directory
   file: path=/tmp/dcos state=directory
 
