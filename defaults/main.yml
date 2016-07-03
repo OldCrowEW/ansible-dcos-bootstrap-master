@@ -1,2 +1,7 @@
 ---
 # defaults file for ansible-dcos-bootstrap-master
+
+dcos_bootstrap_url: "{{ bootstrap_internal_url }}"
+bootstrap_internal_url: http://{{ hostvars['bootstrap1']['ansible_eth0']['ipv4']['address'] }}:{{ dcos_bootstrap_port }}
+bootstrap_external_url: http://192.168.0.10:{{ dcos_bootstrap_port }}
+dcos_bootstrap_port: 80
